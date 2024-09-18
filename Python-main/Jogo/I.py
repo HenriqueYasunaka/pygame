@@ -14,7 +14,7 @@ class Inimigo:
     def desenhar(self, window):
         surface = pygame.Surface((800, 600), pygame.SRCALPHA)
         image = pygame.image.load("imagens/ZumbiAndando1-removebg-preview.png")
-        image = pygame.transform.scale(image, (40*2, 50*2))
+        image = pygame.transform.scale(image, (60, 70))
         ret_azul = pygame.draw.rect(surface, self.cor, (self.x, self.y, 40, 50))
         window.blit(image, ret_azul)
         return ret_azul
